@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<htm>
+<html>
     <head>
         <title> Hello Web World</title>
     </head>
     <body>
-
+        <audio src="/Freddie Mercury - Love Kills (radio.lol).mp3"  id = "player"></audio>
     </body>
-</htm>
+    <script>
+        const player = document.getElementById("player");
+        player.play();
+
+        setTimeout(() => {
+            player.pause();
+        }, 5000);
+    </script>
+</html>
